@@ -1,0 +1,20 @@
+Source: vmdk-stream-converter
+Section: misc
+Priority: extra
+Maintainer: Hideki Yamane <henrich@debian.org>
+Build-Depends: debhelper (>= 8.0.0), python | python-all | python-dev | python-all-dev
+Standards-Version: 3.9.3
+Homepage: https://github.com/imcleod/VMDK-stream-converter
+#Vcs-Git: git://git.debian.org/collab-maint/vmdk-stream-converter.git
+#Vcs-Browser: http://git.debian.org/?p=collab-maint/vmdk-stream-converter.git;a=summary
+
+Package: vmdk-stream-converter
+Architecture: all
+Depends: ${python:Depends}, ${misc:Depends}
+Description: raw disk images to stream-optimized VMDK files convert tool
+ This tool convert raw disk images to stream-optimized VMDK files for VMWare
+ ESX/vSphere environment, and known to work on ESXi 4.1.
+ .
+ Its format is only useful if you are attempting to import virtual machines
+ into ESX using the vSphere SOAP API and HTTP POST uploads of image files.
+ (In which case, it is required.)

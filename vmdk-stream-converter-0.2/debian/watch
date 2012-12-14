@@ -1,0 +1,5 @@
+# Compulsory line, this is a version 3 file
+version=3
+
+https://github.com/imcleod/VMDK-stream-converter/tags \
+ /imcleod/VMDK-stream-converter/archive/(.*).tar.gz
